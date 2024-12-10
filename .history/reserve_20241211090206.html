@@ -8,9 +8,10 @@
   </head>
   <body>
     <div class="reservation-container">
-      <!-- Image -->
-      <div class="banner">
-        <img src="images/WwwwLogo.png" alt="Logo" />
+      
+        <!-- Image -->
+        <div class="banner">
+          <img src="images/WwwwLogo.png" alt="Logo" />
       </div>
 
       <form id="reservation-form" method="post" class="reservation-form">
@@ -18,7 +19,7 @@
 
         <div class="form-group">
           <label for="party-size">Party Size</label>
-          <select id="party-size" name="party_size">
+          <select id="party-size" name="party_size" >
             <option value="2">2 guests</option>
             <option value="3">3 guests</option>
             <option value="4">4 guests</option>
@@ -40,7 +41,7 @@
 
         <div class="form-group">
           <label for="reservation-time">Time</label>
-          <select id="reservation-time" name="reservation_time">
+          <select id="reservation-time" name="reservation_time" >
             <!-- Hard coded for simplicity -->
             <option value="13:00">12:00 PM</option>
             <option value="12:30">12:30 PM</option>
@@ -64,7 +65,7 @@
 
         <div class="form-group">
           <label for="contact-name">Name</label>
-          <input type="text" id="contact-name" name="name" />
+          <input type="text" id="contact-name" name="name"/>
         </div>
 
         <div class="form-row">
@@ -75,24 +76,25 @@
           <div class="or-text">OR</div>
           <div class="form-group">
             <label for="contact-phone">Phone Number</label>
-            <input
-              type="tel"
-              id="contact-phone"
-              name="phone"
-              pattern="\d{10}"
-              title="Phone number must be exactly 10 digits."
-              data-optional
-            />
+            <input type="tel" id="contact-phone" name="phone" data-optional />
           </div>
         </div>
 
         <div id="form-button">
-          <button type="submit" id="submit" class="book-table">
-            Book Table
-          </button>
+          <button type="submit" id="submit" class="book-table">Book Table</button>
         </div>
       </form>
     </div>
+    
+    <!-- <div id="submit-modal" class="modal">
+      <div class="modal-content">
+        <h2>Reservation Confirmed !</h2>
+        <span class="close">&times;</span>
+        <div id="modal-details"></div>
+        <img src="images/ReservationBackground.jpg" alt="Waywood Entry" class="modal-image">
+      </div>
+  </div>
+   -->
 
     <script src="reservation.js"></script>
   </body>
